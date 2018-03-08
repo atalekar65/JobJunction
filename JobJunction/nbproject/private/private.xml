@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/E:/Projects/JobJunction/src/java/com/earnestpro/jobjunction/application/Application.java</file>
+            <file>file:/E:/Projects/JobJunction/src/java/com/earnestpro/jobjunction/dao/EmployerDAO.java</file>
+            <file>file:/E:/Projects/JobJunction/src/java/com/earnestpro/jobjunction/jobs/Jobs.java</file>
+            <file>file:/E:/Projects/JobJunction/src/java/com/earnestpro/jobjunction/daoimpl/JobSeekerDAOImpl.java</file>
+            <file>file:/E:/Projects/JobJunction/src/java/com/earnestpro/jobjunction/dao/JobSeekerDAO.java</file>
+            <file>file:/E:/Projects/JobJunction/src/java/com/earnestpro/jobjunction/jobseeker/JobSeeker.java</file>
+            <file>file:/E:/Projects/JobJunction/src/java/com/earnestpro/jobjunction/employer/Employer.java</file>
+            <file>file:/E:/Projects/JobJunction/src/java/com/earnestpro/jobjunction/dao/JobsDAO.java</file>
+            <file>file:/E:/Projects/JobJunction/src/java/com/earnestpro/jobjunction/daoimpl/EmployerDAOImpl.java</file>
+            <file>file:/E:/Projects/JobJunction/src/java/com/earnestpro/jobjunction/daoimpl/JobsDAOImpl.java</file>
+            <file>file:/E:/Projects/JobJunction/src/java/com/earnestpro/jobjunction/daoimpl/ApplicationDAOImpl.java</file>
+            <file>file:/E:/Projects/JobJunction/src/java/com/earnestpro/jobjunction/dao/ApplicationDAO.java</file>
+            <file>file:/E:/Projects/JobJunction/src/java/com/earnestpro/jobjunction/utilities/Test.java</file>
+        </group>
+    </open-files>
+</project-private>
