@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+          div.absolute {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 80px;
+    height: 70px;
+   
+}
+
+.sexytabs > ul {
+    top: 80px;
+  text-align: center;
+  font-weight: 500;
+  margin: 70px 10px 10px 8px;
+  padding : 10px;
+  position: relative;
+ }
+.sexytabs > ul > li {
+  display: inline-block;
+  li {
+    text-shadow: 10px 2px ;
+}
+  background: #c8cbcf; whitesmoke;
+  padding: 0.6em 0;
+  position: relative;
+  width: 20%;
+  margin: 20px 5px 0 0;
+}
+.sexytabs > ul > li:before, .sexytabs > ul > li:after {
+  opacity: 1;
+  transition: 0.3s ease;
+}
+.sexytabs > ul > li.ui-tabs-active:before, .sexytabs > ul > li.ui-tabs-active:after, .sexytabs > ul > li.ui-state-hover:before, .sexytabs > ul > li.ui-state-hover:after, .sexytabs > ul > li.ui-state-focus:before, .sexytabs > ul > li.ui-state-focus:after {
+  opacity: 1;
+}
+.sexytabs > ul > li:before, .sexytabs > ul > li.ui-state-active.ui-state-hover:before, .sexytabs > ul > li.ui-state-active.ui-state-focus:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  box-shadow: 5px 4px 3px rgba(22, 195, 255, 0.5);
+  top: 50%;
+  bottom: 0px;
+  left: 5px;
+  right: 5px;
+  border-radius: 100px / 10px;
+}
+.sexytabs > ul > li:after, .sexytabs > ul > li.ui-state-active.ui-state-hover:after, .sexytabs > ul > li.ui-state-active.ui-state-focus:after {
+  content: "";
+  background: #fafafa;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 50%;
+  bottom: -6px;
+  margin-left: -6px;
+  transform: rotate(45deg);
+  box-shadow: inset 3px 3px 3px rgba(22, 195, 255, 0.5), inset 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+.sexytabs > ul > li.ui-state-hover:before, .sexytabs > ul > li.ui-state-focus:before {
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+.sexytabs > ul > li.ui-state-hover:after, .sexytabs > ul > li.ui-state-focus:after {
+  box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.2), inset 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+     </style>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>$(".sexytabs").tabs({ 
+  show: { effect: "slide", direction: "left", duration: 200, easing: "easeOutBack" } ,
+  hide: { effect: "slide", direction: "right", duration: 200, easing: "easeInQuad" } 
+});</script>
+    </head>
+    <body>
+        <div class="absolute">
+        <img src="C:\Users\Sanjay\Desktop\Project_logo2.jpg"  width="220" height="110"/>
+        </div>
+        <div class="sexytabs">  
+          <ul>
+    <li>
+      <span>All Jobs</span></li>
+    <li>
+      <span>Government Jobs</span></li>
+    <li>
+      <span>Management Jobs</span></li>
+     <li>
+      <span>International Jobs</span></li>
+  </ul>
+            </div>
+    </body>
+</html>

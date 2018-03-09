@@ -26,9 +26,9 @@ public class Test {
       EmployerDAO employerdao=new EmployerDAOImpl();
       ApplicationDAO applicationdao=new ApplicationDAOImpl();
 // ******************************* job seeker ********************************************
-//        int count=jobseekerdao.addjobseeker(new JobSeeker("jessie","FEMALE","jessiew78@gmail.com","msc","8219138389","17/08/1980","banglore","karnataka","123456",10,"jew7892"));
-//        if(count>0)System.out.println("Record added Successfully");
-//        else System.out.println("Record Failed to get added");
+        int count=jobseekerdao.addjobseeker(new JobSeeker("sanket","FEMALE","sanket@gmail.com","msc","8219138378","17/08/1980","banglore","karnataka","123456",10,"55957"));
+        if(count>0)System.out.println("Record added Successfully");
+        else System.out.println("Record Failed to get added");
         
 //        int count=jobseekerdao.deleteJobseeker(6);
 //        if(count>0)System.out.println("Record Deleted Successfully");
@@ -44,7 +44,7 @@ public class Test {
 //            JobSeeker jb = jobseekerdao.getJobseekerByID(3);
 //            System.out.println("candidate ID : "+jb.getCandidate_id()+" | "+"candidate name : "+jb.getCandidate_name() + " | " +"candidate gender : "+ jb.getCandidate_gender() + "|  " +"candidate email : "+ jb.getCandidate_email() + "  |  " +"candidate qualification : "+ jb.getQualification() +" | "+"contact no. : "+ jb.getCandidate_contact() +" | "+ "date of birth : "+jb.getCandidate_dob() +"  |  "+"address : "+ jb.getCandidate_address() +" | "+ "city : "+jb.getCandidate_city() +" | "+ "zip code : "+jb.getZip_code()+" | "+ "experience : "+jb.getCandidate_experience() +"  |  "+ "password : "+jb.getCandidate_password());
     
-//                JobSeeker jobseeker=new JobSeeker(3,"change1235");
+//                JobSeeker jobseeker=new JobSeeker(3,"akshay7887");
 //                int count =jobseekerdao.updateJobseeker(3, jobseeker);
 //                if(count >0)
 //                    System.out.println("record updated successfully");
@@ -106,10 +106,10 @@ public class Test {
 
 
 //**********************************************************************************************************************
-    int count=applicationdao.addApplication(new Application(1000,1,"11/11/2011"));
-    if(count>0)
-            System.out.println("records inserted succesfully");
-    else System.out.println("records failed to get updated");
-//   }
-date format
+//    int count=applicationdao.addApplication(new Application(1000,1,"11/11/2011"));
+//    if(count>0)
+//            System.out.println("records inserted succesfully");
+//    else System.out.println("records failed to get updated");
+////   }
+//date format
 }}
