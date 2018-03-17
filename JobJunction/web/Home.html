@@ -1,98 +1,145 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
-          div.absolute {
-    position: absolute;
-    top: 25px;
-    left: 0;
-    width: 80px;
-    height: 70px;
-   
-}
-
-.sexytabs > ul {
-    top: 80px;
-  text-align: center;
-  font-weight: 500;
-  margin: 70px 10px 10px 8px;
-  padding : 10px;
-  position: relative;
- }
-.sexytabs > ul > li {
-  display: inline-block;
-  li {
-    text-shadow: 10px 2px ;
-}
-  background: #c8cbcf; whitesmoke;
-  padding: 0.6em 0;
-  position: relative;
-  width: 20%;
-  margin: 20px 5px 0 0;
-}
-.sexytabs > ul > li:before, .sexytabs > ul > li:after {
-  opacity: 1;
-  transition: 0.3s ease;
-}
-.sexytabs > ul > li.ui-tabs-active:before, .sexytabs > ul > li.ui-tabs-active:after, .sexytabs > ul > li.ui-state-hover:before, .sexytabs > ul > li.ui-state-hover:after, .sexytabs > ul > li.ui-state-focus:before, .sexytabs > ul > li.ui-state-focus:after {
-  opacity: 1;
-}
-.sexytabs > ul > li:before, .sexytabs > ul > li.ui-state-active.ui-state-hover:before, .sexytabs > ul > li.ui-state-active.ui-state-focus:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  box-shadow: 5px 4px 3px rgba(22, 195, 255, 0.5);
-  top: 50%;
-  bottom: 0px;
-  left: 5px;
-  right: 5px;
-  border-radius: 100px / 10px;
-}
-.sexytabs > ul > li:after, .sexytabs > ul > li.ui-state-active.ui-state-hover:after, .sexytabs > ul > li.ui-state-active.ui-state-focus:after {
-  content: "";
-  background: #fafafa;
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  left: 50%;
-  bottom: -6px;
-  margin-left: -6px;
-  transform: rotate(45deg);
-  box-shadow: inset 3px 3px 3px rgba(22, 195, 255, 0.5), inset 1px 1px 1px rgba(0, 0, 0, 0.3);
-}
-.sexytabs > ul > li.ui-state-hover:before, .sexytabs > ul > li.ui-state-focus:before {
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-}
-.sexytabs > ul > li.ui-state-hover:after, .sexytabs > ul > li.ui-state-focus:after {
-  box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.2), inset 1px 1px 1px rgba(0, 0, 0, 0.3);
-}
-
-     </style>
         
-        <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script>$(".sexytabs").tabs({ 
-  show: { effect: "slide", direction: "left", duration: 200, easing: "easeOutBack" } ,
-  hide: { effect: "slide", direction: "right", duration: 200, easing: "easeInQuad" } 
-});</script>
-    </head>
-    <body>
-        <div class="absolute">
-        <img src="C:\Users\Sanjay\Desktop\Project_logo2.jpg"  width="220" height="110"/>
+  
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>  
+<style>
+    .tbn
+    {
+        margin-top: 180px;
+    }
+    .dropdown
+  {
+      background-color: lightgray;
+      position: absolute;
+      left: 90px;
+  }
+  .drop
+  {
+      color: mediumblue;
+      background-color: lightgray;
+      width: ;
+      position:absolute;
+      margin-left: 230px;
+  } 
+  .dropbtn
+  {
+    background-color: lightgray;
+    
+      position:absolute;
+      margin-left: 460px;  
+  }
+  .dropgvt
+  {
+    background-color: lightgray;
+     
+      position:absolute;
+      margin-left: 660px;   
+  }
+  </style>
+  </head>
+  
+       <!-- Second navbar for sign in -->
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-2">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Menu</a>
         </div>
-        <div class="sexytabs">  
-          <ul>
-    <li>
-      <span>All Jobs</span></li>
-    <li>
-      <span>Government Jobs</span></li>
-    <li>
-      <span>Management Jobs</span></li>
-     <li>
-      <span>International Jobs</span></li>
-  </ul>
-            </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse-2">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Register Here</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Employer Zone</a></li>
+            <li><a href="#">Profiles</a></li>
+            <li>
+              <a class="btn btn-default btn-outline btn-circle collapsed"  data-toggle="collapse" href="#nav-collapse2" aria-expanded="false" aria-controls="nav-collapse2">Sign in</a>
+            </li>
+          </ul>
+          <div class="collapse nav navbar-nav nav-collapse slide-down" id="nav-collapse2">
+            <form class="navbar-form navbar-right form-inline" role="form">
+              <div class="form-group">
+                <label class="sr-only" for="Email">Email</label>
+                <input type="email" class="form-control" id="Email" placeholder="Email" autofocus required />
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="Password">Password</label>
+                <input type="password" class="form-control" id="Password" placeholder="Password" required />
+              </div>
+              <button type="submit" class="btn btn-success">Sign in</button>
+            </form>
+          </div>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+    
+    <div class="tbn">
+      <div class="container">                                          
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">All Jobs
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">JavaScript</a></li>
+    </ul>
+  </div>
+</div>
+      <div class="drop">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Management Jobs
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Human Resources</a></li>
+      <li><a href="#">Finance</a></li>
+      <li><a href="#">Oil and Gas</a></li>
+      <li><a href="#">Retail Management</a></li>
+      <li><a href="#">Textiles Management</a></li>
+      <li><a href="#">Risk Management</a></li>
+      <li><a href="#">Logistic Management</a></li>
+      <li><a href="#">Product Management</a></li>
+      <li><a href="#">Health Care Management</a></li>
+      <li><a href="#">Others...</a></li>
+    </ul>
+  </div>
+          <div class="dropbtn">
+    <button class="btn btn-primary" type="button" >International Jobs
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">JavaScript</a></li>
+    </ul>
+  </div>
+                  <div class="dropgvt">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Government Jobs
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Merchant Navy</a></li>
+      <li><a href="#">Telecom jobs</a></li>
+      <li><a href="#">Civil Services</a></li>
+      <li><a href="#">Public Setcor Unit (BHEL,ONGC,IOCL,HPCL)</a></li>
+      <li><a href="#">Government Lecturer/ University Professors</a></li>
+      <li><a href="#">Indian Railway</a></li>
+       <li><a href="#">Defence services</a></li>
+    </ul>
+  </div>
+    </div>
     </body>
+
 </html>
