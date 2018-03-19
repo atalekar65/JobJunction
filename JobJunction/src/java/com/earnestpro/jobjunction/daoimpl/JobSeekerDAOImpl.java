@@ -196,21 +196,28 @@ public class JobSeekerDAOImpl implements JobSeekerDAO
 //    
 
     @Override
-    public String isUserValid(String candidate_email, String candidate_password, JobSeeker jobseeker) {
-        int count=0; 
+    public boolean isUserValid(String candidate_email, String candidate_password) {
+          
         try {
             Connection connection=DBConnection.getConnection();
-            PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM jobseeker WHERE candidate_email  IN ( '?' )and candidate_password IN ('?'); ");
+            PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM jobseeker WHERE candidate_email=? and candidate_password=?; ");
            // preparedStatement.setString(1,jobseeker.getCandidate_email());
-            preparedStatement.setString(1,"jessiew78@gmail.com");
-            preparedStatement.setString(1,"jew7892");
-                       
+            preparedStatement.setString(1,candidate_email);
+            preparedStatement.setString(1,candidate_password);
+             ResultSet rs=preparedStatement.executeQuery();
             //preparedStatement.setString(2,jobseeker.getCandidate_password());
-            count =preparedStatement.executeUpdate();
+            if(rs !=null)
+            {
+                return rs.next();
+            }
         } catch (SQLException ex) {
             Logger.getLogger(JobSeekerDAOImpl.class.getName()).log(Level.SEVERE, null, ex);
         }
-        return null;
+        System.out.println("login failed");;
+        return false;
+    } //To change body of generated methods, choose Tools | Templates.
     }
+
+    
    
-}
+

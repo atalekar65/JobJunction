@@ -9,6 +9,10 @@ public class JobSeeker {
     String candidate_name,candidate_gender,candidate_email,qualification,candidate_address,candidate_city,candidate_password;
     String   candidate_dob,candidate_contact,zip_code;
 
+    public JobSeeker(String candidate_name, String candidate_gender, String candidate_email, String qualification, String candidate_contact, String candidate_dob, String candidate_address, String candidate_city, int zip_code, int candidate_experience, String candidate_password) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
   
       
 

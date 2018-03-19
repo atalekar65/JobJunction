@@ -127,36 +127,36 @@
     </head>
     <body>
         <div class="container">
-            <form class="form-horizontal" role="form">
+            <form method="post" action="signin.do" class="form-horizontal" role="form">
                 <h2>Registration</h2>
                 <div class="form-group">
                     <label for="firstName" class="col-sm-3 control-label">First Name</label>
                     <div class="col-sm-9">
-                        <input type="text" id="firstName" placeholder="First Name" class="form-control" autofocus>
+                        <input type="text" id="firstName" placeholder="First Name" class="form-control" name="candidate_name" autofocus>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="lastName" class="col-sm-3 control-label">Last Name</label>
                     <div class="col-sm-9">
-                        <input type="text" id="lastName" placeholder="Last Name" class="form-control" autofocus>
+                        <input type="text" id="lastName" placeholder="Last Name" class="form-control" name="candidate_name" autofocus>
                     </div>
                 </div>             
                 <div class="form-group">
                     <label for="email" class="col-sm-3 control-label">Email* </label>
                     <div class="col-sm-9">
-                        <input type="email" id="email" placeholder="Email" class="form-control" name= "email">
+                        <input type="email" id="email" placeholder="Email" class="form-control" name="candidate_email">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="Address" class="col-sm-3 control-label">Address</label>
                     <div class="col-sm-9">
-                        <input type="text" id="Address" placeholder="Address" class="form-control" autofocus>
+                        <input type="text" id="Address" placeholder="Address" class="form-control" name="candidate_address" autofocus>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-sm-3 control-label">City</label>
                     <div class="col-sm-3">
-                    <select class="custom-select">
+                    <select class="custom-select" name="candidate_city">
                       <option>Mumbai</option>
                     <option>Delhi</option>
                 <option>Kolkata</option>
@@ -174,31 +174,31 @@
                   <div class="form-group">
                     <label for="ZipCode" class="col-sm-3 control-label">Zip Code</label>
                     <div class="col-sm-9">
-                        <input type="ZipCode" id="phoneNumber" placeholder="ZipCode" class="form-control">
+                        <input type="ZipCode" id="phoneNumber" placeholder="ZipCode" class="form-control" name="zip_code">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="password" class="col-sm-3 control-label">Password*</label>
                     <div class="col-sm-9">
-                        <input type="password" id="password" placeholder="Password" class="form-control">
+                        <input type="password" id="password" placeholder="Password" class="form-control" name="canadidate_password">
                     </div>
                 </div>
-                <div class="form-group">
+<!--                <div class="form-group">
                     <label for="password" class="col-sm-3 control-label">Confirm Password*</label>
                     <div class="col-sm-9">
                         <input type="password" id="password" placeholder="Password" class="form-control">
                     </div>
-                </div>
+                </div>-->
                 <div class="form-group">
                     <label for="birthDate" class="col-sm-3 control-label">Date of Birth*</label>
                     <div class="col-sm-9">
-                        <input type="date" id="birthDate" class="form-control">
+                        <input type="date" id="birthDate" class="form-control" name="candidate_dob">
                     </div>
                 </div>
                  <div class="form-group">
                     <label for="Experience" class="col-sm-3 control-label">Experience</label>
                     <div class="col-sm-9">
-                        <input type="Experience" id="phoneNumber" placeholder="Experience in years" class="form-control">
+                        <input type="Experience" id="phoneNumber" placeholder="Experience in years" class="form-control" name="candidate_experience">
                     </div>
                 </div>
                  <div class="form-group">
@@ -210,7 +210,7 @@
                 <div class="form-group">
                     <label for="phoneNumber" class="col-sm-3 control-label">Contact number</label>
                     <div class="col-sm-9">
-                        <input type="phoneNumber" id="phoneNumber" placeholder="Phone number" class="form-control">
+                        <input type="phoneNumber" id="phoneNumber" placeholder="Phone number" class="form-control" name="candidate_contact">
                         <span class="help-block">Your phone number won't be disclosed anywhere </span>
                     </div>
                 </div>
@@ -220,12 +220,12 @@
                         <div class="row">
                             <div class="col-sm-4">
                                 <label class="radio-inline">
-                                    <input type="radio" id="femaleRadio" value="Female">Female
+                                    <input type="radio" id="femaleRadio" value="FEMALE" name="candidate_gender">FEMALE
                                 </label>
                             </div>
                             <div class="col-sm-4">
                                 <label class="radio-inline">
-                                    <input type="radio" id="maleRadio" value="Male">Male
+                                    <input type="radio" id="maleRadio" value="MALE" name="candidate_gender">MALE
                                 </label>
                             </div>
                         </div>
@@ -236,7 +236,7 @@
                         <span class="help-block">*Required fields</span>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary btn-block">Register</button>
+                <input type="submit" class="btn btn-primary btn-block" value="submit" >
             </form> <!-- /form -->
         </div> <!-- ./container -->
     </body>

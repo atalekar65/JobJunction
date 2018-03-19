@@ -10,7 +10,22 @@
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>  
 <style>
-    .tbn
+   .jumbotron {
+      background-color: #f4511e;
+      color: #fff;
+      border-bottom-color: #007bff;
+      
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .row
+  {
+      
+      color: #f4511e;
+      font-size: 50px;
+  }
+  .tbn
     {
         margin-top: 180px;
     }
@@ -42,6 +57,7 @@
       position:absolute;
       margin-left: 660px;   
   }
+   
   </style>
   </head>
   
@@ -64,30 +80,42 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Home</a></li>
             <li><a href="#">About Us</a></li>
-            <li><a href="#">Register Here</a></li>
+            <li><a href="http://localhost:8080/JobJunction/Register.jsp">Register Here</a></li>
             <li><a href="#">Contact Us</a></li>
             <li><a href="#">Employer Zone</a></li>
             <li><a href="#">Profiles</a></li>
             <li>
-              <a class="btn btn-default btn-outline btn-circle collapsed"  data-toggle="collapse" href="#nav-collapse2" aria-expanded="false" aria-controls="nav-collapse2">Sign in</a>
+                <a class="btn btn-default btn-outline btn-circle collapsed"  data-toggle="collapse" href="#nav-collapse2" aria-expanded="false" aria-controls="nav-collapse2">  <span class="glyphicon glyphicon-log-out"></span>  Sign in</a>
             </li>
           </ul>
           <div class="collapse nav navbar-nav nav-collapse slide-down" id="nav-collapse2">
-            <form class="navbar-form navbar-right form-inline" role="form">
+              <form class="navbar-form navbar-right form-inline" role="form" action="/signin.do">
               <div class="form-group">
                 <label class="sr-only" for="Email">Email</label>
-                <input type="email" class="form-control" id="Email" placeholder="Email" autofocus required />
+                <input type="email" name="email" class="form-control" id="Email" placeholder="Email" autofocus required />
               </div>
               <div class="form-group">
                 <label class="sr-only" for="Password">Password</label>
-                <input type="password" class="form-control" id="Password" placeholder="Password" required />
+                <input type="password" name="password" class="form-control" id="Password" placeholder="Password" required />
               </div>
-              <button type="submit" class="btn btn-success">Sign in</button>
+              <button type="submit" class="btn btn-success"   value="login">Sign in</button>
             </form>
           </div>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container -->
     </nav><!-- /.navbar -->
+      <div class="jumbotron text-center">
+  <h1>Job Junction</h1> 
+  <p>We specialize in </p> 
+ 
+    <div class="input-group">
+      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+      <div class="input-group-btn">
+          <button type="button" class="btn btn-danger" >Subscribe</button>
+      </div>
+    </div>
+  
+</div>
     
     <div class="tbn">
       <div class="container">                                          
@@ -133,13 +161,56 @@
       <li><a href="#">Merchant Navy</a></li>
       <li><a href="#">Telecom jobs</a></li>
       <li><a href="#">Civil Services</a></li>
-      <li><a href="#">Public Setcor Unit (BHEL,ONGC,IOCL,HPCL)</a></li>
+      <li><a href="#">Public SetcoMenu
+Companyr Unit (BHEL,ONGC,IOCL,HPCL)</a></li>
       <li><a href="#">Government Lecturer/ University Professors</a></li>
       <li><a href="#">Indian Railway</a></li>
        <li><a href="#">Defence services</a></li>
     </ul>
   </div>
     </div>
+    <div class="cont">
+  <div class="container-fluid text-center">
+  <h2></h2>
+  <h2>Get Hire For</h2>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-flag"></span>
+      <h4>Defence department</h4>
+      <p></p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe"></span>
+      <h4>International</h4>
+      <p></p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-lock"></span>
+      <h4>Government</h4>
+      <p></p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-piggy-bank"></span>
+      <h4>Banking</h4>
+      <p></p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-certificate"></span>
+      <h4>Management</h4>
+      <p></p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-user"></span>
+      <h4>Information Techonology</h4>
+      <p></p>
+    </div>
+  </div>
+</div>
+        </div>
     </body>
 
 </html>

@@ -11,7 +11,7 @@ public interface JobSeekerDAO {
     JobSeeker getJobseekerByID(int candidate_id);
     int updateJobseeker(int candidate_id,JobSeeker jobseeker);
     String  isValidate(String candidate_email,String candidate_password);
-    String  isUserValid(String candidate_email,String candidate_password,JobSeeker jobseeker);
+    boolean  isUserValid(String candidate_email,String candidate_password);
     
         
     
